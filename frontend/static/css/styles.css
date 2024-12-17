@@ -1,0 +1,360 @@
+/* Bootstrap css */
+
+body {
+	background-image: url("color_background_3.png");
+	background-repeat: repeat;
+  }
+
+/* home */
+.bg-gray {
+	background-color: #e5e5e5;
+  }
+
+
+  .bg-white {
+	background-color: #ffffff;
+  }
+
+
+  @keyframes rotate {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+
+  .rotating-star {
+	color: rgb(255, 248, 47);
+	animation: rotate 4s linear infinite;
+	display: inline-block;
+  }
+
+  .btn-outline-info-custo { /* creategame-button, joingame-button */
+	--bs-btn-color: #00e5ff;
+	--bs-btn-border-color: #00e5ff;
+	--bs-btn-hover-color: #ffffff;
+	--bs-btn-hover-bg: #00e5ff;
+	--bs-btn-hover-border-color: #00e5ff;
+	--bs-btn-focus-shadow-rgb: 13, 202, 240;
+	--bs-btn-active-color: #ffffff;
+	--bs-btn-active-bg: #00e5ff;
+	--bs-btn-active-border-color: #00e5ff;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #00e5ff;
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: #00e5ff;
+	--bs-gradient: none;
+	pointer-events: auto;        /* Assure que le bouton reste interactif */
+    z-index: 1;                  /* Garantit que le bouton est au-dessus des autres éléments */
+    opacity: 1;                  /* Assure que le bouton reste visible */
+    outline: none;               /* Désactive la bordure de focus si elle est indésirable */
+    transition: all 0.3s ease;   /* Ajoute une transition douce pour les effets de survol */
+  }
+
+  .btn-outline-grey-custo {
+	--bs-btn-color: #868686;
+	--bs-btn-border-color: #868686;
+	--bs-btn-hover-color: #ffffff;
+	--bs-btn-hover-bg: #868686;
+	--bs-btn-hover-border-color: #868686;
+	--bs-btn-focus-shadow-rgb: 13, 202, 240;
+	--bs-btn-active-color: #ffffff;
+	--bs-btn-active-bg: #868686;
+	--bs-btn-active-border-color: #868686;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #868686;
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: #868686;
+	--bs-gradient: none;
+  }
+
+  .btn-info-custo { /* game-button, tournament-button, localgame-button, remotegame-button */
+	--bs-btn-color: #ffffff;
+	--bs-btn-bg: #0dcaf0;
+	--bs-btn-border-color: #0dcaf0;
+	--bs-btn-hover-color: #ffffff;
+	--bs-btn-hover-bg: #31d2f2;
+	--bs-btn-hover-border-color: #25cff2;
+	--bs-btn-focus-shadow-rgb: 11, 172, 204;
+	--bs-btn-active-color: #ffffff;
+	--bs-btn-active-bg: #3dd5f3;
+	--bs-btn-active-border-color: #25cff2;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #ffffff;
+	--bs-btn-disabled-bg: #0dcaf0;
+	--bs-btn-disabled-border-color: #0dcaf0;
+	pointer-events: auto;        /* Assure que le bouton reste interactif */
+    z-index: 1;                  /* Garantit que le bouton est au-dessus des autres éléments */
+    opacity: 1;                  /* Assure que le bouton reste visible */
+    outline: none;               /* Désactive la bordure de focus si elle est indésirable */
+    transition: all 0.3s ease;   /* Ajoute une transition douce pour les effets de survol */
+  }
+
+
+  .btn-secondary-custo { /* home-button */
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #d6d8db;
+	--bs-btn-border-color: #d6d8db;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #dfe1e4;
+	--bs-btn-hover-border-color: #dfe1e4;
+	--bs-btn-focus-shadow-rgb: 180, 182, 184;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #b5b7b9;
+	--bs-btn-active-border-color: #a5a7a9;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #d6d8db;
+	--bs-btn-disabled-border-color: #d6d8db;
+  }
+
+  .btn-friend {
+	--bs-btn-color: #00ff2f;
+	--bs-btn-border-color: #00ff2f;
+	--bs-btn-hover-color: #ffffff;
+	--bs-btn-hover-bg: #00ff2f;
+	--bs-btn-hover-border-color: #00ff2f;
+	--bs-btn-focus-shadow-rgb: 13, 202, 240;
+	--bs-btn-active-color: #ffffff;
+	--bs-btn-active-bg: #00ff2f;
+	--bs-btn-active-border-color: #00e5ff;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #00ff2f;
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: #00ff2f;
+	--bs-gradient: none;
+  }
+
+  .login-overlay {
+	position: fixed; /* Sticks the element to the viewport */
+	top: 0;
+	left: 0;
+	width: 100vw; /* Full viewport width */
+	height: 100vh; /* Full viewport height */
+	display: flex; /* Enables flexbox */
+	justify-content: center; /* Centers horizontally */
+	align-items: center; /* Centers vertically */
+	background-color: rgba(255, 255, 255, 0.7); /* Optional translucent background */
+	z-index: 10; /* Ensures it stays above other templates */
+  }
+
+  #failToast {
+	z-index: 11;
+  }
+
+  #basicToast {
+	z-index: 11;
+  }
+
+  .square-container {
+	width: 200px; /* Adjust the size as needed */
+	height: 200px; /* Same as width to ensure a square shape */
+	display: flex; /* Flexbox for centering the content */
+	justify-content: center; /* Horizontal centering */
+	align-items: center; /* Vertical centering */
+	border: 1px solid var(--bs-border-color); /* Optional: for a consistent border */
+	border-radius: 0.75rem; /* Rounded corners, matching the shadow-sm class */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: consistent shadow */
+  }
+
+
+  /* .btn-outline-primary-cyan {
+	background-color: #66f7ff;
+	color: #ffffff;
+	border-color: #66f7ff;
+  }
+  .btn-outline-primary-cyan:hover {
+	background-color: #59dee5;
+	color: #ffffff;
+  } */
+
+  .btn-primary-cyan {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #00eaff;
+	--bs-btn-border-color: #00eaff;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #00c0d2;
+	--bs-btn-hover-border-color: #00c9dc;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #00c9dc;
+	--bs-btn-active-border-color: #00c9dc;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #00eaff;
+	--bs-btn-disabled-border-color: #00eaff;
+  }
+
+  .btn-outline-primary-cyan {
+	--bs-btn-color: #00eaff;
+	--bs-btn-border-color: #00eaff;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #00eaff;
+	--bs-btn-hover-border-color: #00eaff;
+	--bs-btn-focus-shadow-rgb: 13, 110, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #00eaff;
+	--bs-btn-active-border-color: #00eaff;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #00eaff;
+	--bs-btn-disabled-bg: transparent;
+	--bs-btn-disabled-border-color: #00eaff;
+	--bs-gradient: none;
+  }
+
+  /* #party-button {
+	--bs-btn-color: #fff;
+	--bs-btn-bg: #4dfffc;
+	--bs-btn-border-color: #4dfffc;
+	--bs-btn-hover-color: #fff;
+	--bs-btn-hover-bg: #40dfdd;
+	--bs-btn-hover-border-color: #47eae7;
+	--bs-btn-focus-shadow-rgb: 49, 132, 253;
+	--bs-btn-active-color: #fff;
+	--bs-btn-active-bg: #47eae7;
+	--bs-btn-active-border-color: #37ece9;
+	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+	--bs-btn-disabled-color: #fff;
+	--bs-btn-disabled-bg: #4dfffc;
+	--bs-btn-disabled-border-color: #4dfffc;	
+  } */
+
+/* Use :root variables with the var() function:
+button {
+    background-color: var(--dark-blue);
+    color: var(--text-color)
+}
+
+You can define a default theme and then override it:
+body.dark-theme {
+   --background-color: black;
+   --text-color: white;
+}
+*/
+
+:root {
+    --dark-blue: #050584;
+}
+
+#layout {
+	display : flex;
+	flex-direction : column;
+	align-items:center;
+	width: 100%;
+}
+
+#container {
+	display : none;
+	position : relative;
+	flex-direction : center;
+	justify-content: center;
+	align-items:center;
+    background: var(--dark-blue);
+	height: 60vh;
+    width: 80vw;
+}
+
+#createJoinSetup {
+	margin-bottom: 2vh;
+}
+
+.line {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+    background-color: white;
+    width: 2px;
+    height: 100%;
+	z-index: 1;
+}
+
+.paddles {
+	position: absolute;
+	background-color: white;
+}
+
+.ball {
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+
+/* rem and em are relative CSS units commonly used for font sizes and spacing
+	rem is short for "root em," and it’s relative to the font size of the root element, usually <html>
+		if you set an element’s font size to 2rem, it would be 2 * 16px = 32px.
+	em is relative to the font size of the element's parent or the element itself if it has a specific size set.
+		if a parent element has a font size of 20px, setting a child element to 1.5em means its font size will be 1.5 * 20px = 30px */
+
+/* La fonction CSS clamp() permet de ramener (d'écrêter) une valeur entre deux bornes inférieure et supérieure
+	width: clamp(10px, 4em, 80px);
+	Ici la largeur fera au plus 80 pixels et au moins 10 pixels mais mesurera 4em de large si un em mesure entre 2.5 et 20px.
+	L'expression clamp(MIN, VAL, MAX) sera résolue comme max(MIN, min(VAL, MAX)))
+	La valeur minimale est la borne inférieure des valeurs autorisées. C'est cette valeur qui sera utilisée si la valeur préférée lui est inférieure.
+	La valeur préférée correspond à la valeur qui sera utilisée si elle est supérieure à la borne inférieure et inférieure à la borne supérieure.
+	La valeur maximale est la borne supérieure des valeurs autorisées. C'est cette valeur qui sera utilisée si la valeur préférée lui est supérieure. */
+
+.score {
+	position: absolute;
+	color: white;
+	font-size: clamp(1rem, 3vw, 2rem);
+	top: 5%;
+}
+
+#score-pl {
+	left: 25%;
+	transform: translateX(-50%);
+}
+
+#score-pr {
+	left: 75%;
+	transform: translateX(-50%);
+}
+
+#victory, #victory-tournament {
+	display: none;
+	flex-direction : column;
+	justify-content: center;
+	align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1vh;
+	z-index: 3;
+}
+
+/* #match-issue {
+	font-size: 5vh;
+	color: red;
+} */
+
+/* table, th, td {
+	border: 1px solid black;
+} */
+
+/* .stats {
+	text-align: center;
+	width: fit-content;
+} */
+
+.hidden {
+	display: none;
+}
+
+
+#ball-anim-home {
+	position: relative; /* Necessary for absolute positioning of the ball */
+	width: 300px; /* Width of the container */
+	height: 300px; /* Height of the container */
+	margin: 0 auto; /* Center it horizontally */
+	overflow: hidden; /* Ensure the ball doesn't leave the container */
+  }
+  
+  #ball-home {
+	position: absolute;
+	width: 18px; /* Width of the ball */
+	height: 18px; /* Height of the ball */
+	background-color: rgb(118, 244, 255); /* Ball color */
+	border-radius: 50%; /* Make it a circle */
+  }
